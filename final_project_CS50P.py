@@ -145,6 +145,7 @@ def plot_data(url, fre, e):
     plt.locator_params(axis="x", nbins=7)
     plt.legend([f"{e.upper()}"])
     plt.title(f"{fre.title()} stock prices of {active_full[index]}")
+    plt.show()
     plt.savefig(f"{active_full[index]}_{fre}.png")
 
 
